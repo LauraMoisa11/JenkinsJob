@@ -19,7 +19,7 @@ public class LoginTest extends BaseTest{
 	public void loginTest(String username, String password) throws InterruptedException {
 		NavigationMenuPage navMenu = new NavigationMenuPage(driver);
 		navMenu.navigateTo(navMenu.loginLink);
-		//assertTrue(false);
+		assertTrue(false);
 		LoginPage loginPage =  new LoginPage(driver);
 		loginPage.loginInApp(username, password);
 		Thread.sleep(3000);
